@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const FILE_URL = 'https://santiao.oss-cn-hongkong.aliyuncs.com/santiao-x64.zip';
+  const FILE_URL = 'https://lsts.oss-cn-hongkong.aliyuncs.com/santiao-20251102009.zip';
 
   const upstream = await fetch(FILE_URL, { redirect: 'follow' });
   if (!upstream.ok) {
